@@ -27,6 +27,7 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 | 데모 시나리오 작성 | Scene별 화면·발표 멘트·필요 데이터 정의 |
 | **Sample / Dummy Data 기획·구축** | 시나리오가 실제로 동작하도록 데이터 설계 후 Org 적재 |
 | NBA 문구 기획 | 추천(Recommendation)·알림(Notification)에 들어갈 실제 메시지 작성 |
+| **Partner Account / Contact 구축** (Phase 2) | 제휴사·담당자 레코드와 Partner 전용 화면 계층(Layout·Record Page) 구성 |
 
 팀은 5명이고, Object/Flow 구축은 Salesforce Builder가, 화면·권한·QA는 Experience Lead가, Fan App 개발은 Developer Lead가 맡는다. 나는 **"무엇을 왜 만드는가"와 "그게 데모에서 어떻게 보이는가"** 사이를 잇는 역할이다.
 
@@ -53,6 +54,8 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 
 | 날짜 | 내용 |
 |---|---|
+| [2026-08-20](worklog/2026-08-20.md) | Partner 전용 화면 계층 구축(Layout·Compact·Lightning Page) + FLS 함정 |
+| [2026-08-19](worklog/2026-08-19.md) | Phase 2 제휴사 Account 생성 + 레코드타입 권한 장애 + Org 실측 |
 | [2026-08-14](worklog/2026-08-14.md) | 1차 데모 실측 검토(치명적 결함 2건) + B2B 확장 방향 결정 |
 | [2026-08-13](worklog/2026-08-13.md) | 데모용 더미 데이터 설계 → Org 적재 (Object 15종 · 약 270건) |
 
@@ -67,7 +70,11 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 
 ## 현재 상태
 
+> Phase 1(B2C Fan 360)은 1차 데모까지 마쳤고, 현재는 **Phase 2 — 팬 데이터를 제휴·스폰서십 영업에 쓰는 B2B 확장**을 진행 중이다.
+
 - 데이터 모델 설계 완료 (표준 Object 8종 + Custom Object 11종)
-- 데모 시나리오 8개 Scene 확정
-- 더미 데이터 적재 진행 중 — Object 15종 완료, Order 계열 재작업 중
+- 데모 시나리오 8개 Scene 확정 — Phase 2 반영해 재구성 중
+- B2C 더미 데이터 적재 완료 — Fan 5,024건. 다만 **가입일이 하루에 몰려 상대 날짜 기반 세그먼트가 전부 0명**, 날짜 역산 재배치가 남아 있음
+- B2B 파이프라인 구축 중 — 담당 체인 혜준(Lead) → **아론(Account/Contact)** → 은영(Opportunity) → 승우(Product/Quote/Campaign)
+- Partner Account 1건 + Partner 전용 화면 계층 구축 완료, Partner Contact는 Account 연결 미완
 - Flow / 화면 구현은 다른 팀원 진행 중
