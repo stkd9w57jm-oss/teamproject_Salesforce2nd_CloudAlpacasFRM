@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fan_List</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Current_Segment__c</columns>
+    <columns>Favorite_Player__c</columns>
+    <columns>Fan_Value_Tier__c</columns>
+    <columns>Engagement_Level__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Fan</value>
+    </filters>
+    <label>Fan List</label>
+</ListView>

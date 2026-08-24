@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner</fullName>
+    <active>true</active>
+    <description>파트너십 계약을 맺은 회사의 담당자</description>
+    <label>Partnership Contact</label>
+</RecordType>
