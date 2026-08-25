@@ -54,6 +54,7 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 
 | 날짜 | 내용 |
 |---|---|
+| [2026-08-25](worklog/2026-08-25.md) | Partner Account Contacts 탭 미노출 트러블슈팅 — 원인은 Page Layout Related Lists 누락 |
 | [2026-08-20](worklog/2026-08-20.md) | Lead Convert 실검증 + PRM 더미 데이터 105건 + Partner 화면 계층 구축 |
 | [2026-08-19](worklog/2026-08-19.md) | Phase 2 제휴사 Account 생성 + 레코드타입 권한 장애 + Org 실측 |
 | [2026-08-14](worklog/2026-08-14.md) | 1차 데모 실측 검토(치명적 결함 2건) + B2B 확장 방향 결정 |
@@ -77,6 +78,6 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 - B2C 더미 데이터 적재 완료 — Fan 5,024건. 다만 **가입일이 하루에 몰려 상대 날짜 기반 세그먼트가 전부 0명**, 날짜 역산 재배치가 남아 있음
 - B2B 파이프라인 구축 중 — 담당 체인 혜준(Lead) → **아론(Account/Contact)** → 은영(Opportunity) → 승우(Product/Quote/Campaign)
 - Partner Account 107건 · Opportunity 6건(Closed Won 1건 포함, 합계 ₩9.5억) 적재, Lead Convert 동작 검증 완료
-- Partner 전용 화면 계층(Page Layout 2 · Compact Layout 1 · Lightning Page 할당 8) 구축 완료
+- Partner 전용 화면 계층(Page Layout 2 · Compact Layout 1 · Lightning Page 할당 8) 구축 완료 — 이후 Related Lists 누락 등 세부 결함 발견·수정 진행 중 (08-25)
 - 정리 중 — 제휴사 담당자 Contact 107건이 Player 레코드타입으로 적재됨, Partner Type `Sponsor` 값이 레코드타입에 미할당
 - Flow / 화면 구현은 다른 팀원 진행 중
