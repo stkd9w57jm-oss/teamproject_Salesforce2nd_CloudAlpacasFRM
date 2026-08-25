@@ -61,14 +61,14 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 | 날짜 | 내용 |
 |---|---|
 | [2026-08-25](worklog/2026-08-25.md) | 파트너십 화면 필드 설계 + 더미 100건 + 사흘 전 심은 ListView 버그 추적 |
-| [2026-08-24](../docs/work-log/2026-08-24-frm-prm-account-contact-separation.md) | FRM/PRM Account·Contact 혼재 해소, RecordType 명칭 정비 (Vibes IDE) |
+| [2026-08-24](worklog/2026-08-24.md) | FRM/PRM Account·Contact 혼재 해소, RecordType 명칭 정비 (Vibes IDE) |
 | [2026-08-21](worklog/2026-08-21.md) | Partner CRM 개선 — Relationship Type, Partnership Status, FlexiPage 탭 재편 |
 | [2026-08-20](worklog/2026-08-20.md) | Lead Convert 실검증 + PRM 더미 데이터 105건 + Partner 화면 계층 구축 |
 | [2026-08-19](worklog/2026-08-19.md) | Phase 2 제휴사 Account 생성 + 레코드타입 권한 장애 + Org 실측 |
 | [2026-08-14](worklog/2026-08-14.md) | 1차 데모 실측 검토(치명적 결함 2건) + B2B 확장 방향 결정 |
 | [2026-08-13](worklog/2026-08-13.md) | 데모용 더미 데이터 설계 → Org 적재 (Object 15종 · 약 270건) |
 
-> ⚠️ 현재 작업 기록이 `portfolio/worklog/`와 `docs/work-log/` 두 곳에 나뉘어 있고 2026-08-21은 양쪽에 중복돼 있다. 한쪽으로 정리 예정.
+> 작업 기록은 **`portfolio/worklog/` 한 곳**에 모은다. 8/24 DX 프로젝트 전환 때 잠시 `docs/work-log/`가 생겼지만 8/25에 이쪽으로 통합했다.
 
 ---
 
@@ -76,6 +76,19 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 
 - [프로젝트 개요](docs/project-overview.md) — 문제 정의, 페르소나, 데모 시나리오
 - [데이터 모델 메모](docs/data-model-notes.md) — 실제로 적재하며 알게 된 제약과 함정
+
+---
+
+## 레포 구조
+
+이 저장소는 두 가지를 같이 담고 있다.
+
+| 경로 | 무엇 |
+|---|---|
+| `portfolio/` | **이 문서가 있는 곳.** 작업 기록(`worklog/`)과 설명 문서(`docs/`) |
+| `force-app/` · `config/` · `manifest/` · `scripts/` | Salesforce DX 프로젝트 — Org 메타데이터(RecordType·ListView·Field·FlexiPage)를 XML 소스로 관리 |
+
+2026-08-24부터 Setup 화면 클릭 대신 **Agentforce Vibes IDE에서 메타데이터를 소스로 관리해 배포**하는 방식으로 바꿨다. 무엇이 언제 왜 바뀌었는지가 git 히스토리에 남는다.
 
 ---
 
