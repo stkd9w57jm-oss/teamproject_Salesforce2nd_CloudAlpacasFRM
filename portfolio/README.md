@@ -60,6 +60,8 @@ Object나 Field를 먼저 설계하는 게 아니라, **비즈니스 스토리�
 
 | 날짜 | 내용 |
 |---|---|
+| [2026-08-28](worklog/2026-08-28.md) | 스폰서십 계약 이력 5년치(Opp 253·Order 220·Asset 99) + Lead 전환 시 DART 공시 자동보강 시스템 구축·배포 |
+| [2026-08-27](worklog/2026-08-27.md) | Partnership 계정 화면 정상화(레코드페이지 활성화) + 소유권 이관 300건 + 공유규칙 + 스폰서 등급 자동화 |
 | [2026-08-25](worklog/2026-08-25.md) | 파트너십 화면 필드 설계 + 더미 100건 + 사흘 전 심은 ListView 버그 추적 |
 | [2026-08-24](worklog/2026-08-24.md) | FRM/PRM Account·Contact 혼재 해소, RecordType 명칭 정비 (Vibes IDE) |
 | [2026-08-21](worklog/2026-08-21.md) | Partner CRM 개선 — Relationship Type, Partnership Status, FlexiPage 탭 재편 |
